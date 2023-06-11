@@ -4,14 +4,29 @@
 // repeatString("yo", 3, ", ") => "yo, yo, yo"
 // repeatString("yo", 0, ", ") => ""
 // repeatString("yo", 1, ", ") => "yo"
+// function repeatString(yo, num, space) {
+//     const newStr = (yo+' ').repeat(num).split(' ')
+//     newStr.pop()
+//     return newStr.join(space)
+// }
+// console.log(repeatString('yo', 5 , "-"))
+
 
 
 //2. Реализуйте функцию, которая принимает параметром сторку и подстроку, а возвращает true, если строка начинается с указанной подстроки, в противном случае - false. Регистр не учитывается.
 // checkStart("Incubator", "inc") => true
 // checkStart("Incubator", "yo") => false
+// function checkStart(word, str) {
+//     return word.startsWith(str)
+// }
+// console.log(checkStart('qwerty', "qwertf"))
 
 //3. Реализуйте функцию, которая принимает параметром строку и число (количество символов), а возвращает строку из параметров, обрезанную до указанного количества символов и завершает её многоточием.
 //truncateString("Всем студентам инкубатора желаю удачи!", 10) => "Всем студе..."
+function truncateString(str, num) {
+    return str.slice(num)
+}
+console.log(truncateString('qwertyqwerty', 2))
 
 //4. Реализуйте функцию, которая принимает параметром сторку (предложение) и возвращает самое короткое слово в предложении, если в параметрах пустая строка или не строка, то возвращает null.
 // getMinLengthWord("Всем студентам инкубатора желаю удачи.") => "Всем"
