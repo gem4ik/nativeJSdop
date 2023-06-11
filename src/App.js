@@ -1,23 +1,57 @@
-import logo from './logo.svg';
 import './App.css';
+import {logDOM} from "@testing-library/react";
 
 function App() {
+    const harryPotterCharacters = {
+        harryPotter: {
+            name: 'Harry Potter',
+            age: 17,
+            house: 'Gryffindor',
+            pet: {
+                name: 'Hedwig',
+                type: 'Owl',
+                color: 'White'
+            }
+        },
+        hermioneGranger: {
+            name: 'Hermione Granger',
+            age: 17,
+            house: 'Gryffindor',
+            pet: {
+                name: 'Crookshanks',
+                type: 'Cat',
+                color: 'Ginger'
+            }
+        },
+        ronWeasley: {
+            name: 'Ron Weasley',
+            age: 17,
+            house: 'Gryffindor',
+            pet: {
+                name: 'Scabbers',
+                type: 'Rat',
+                color: 'Gray'
+            }
+        },
+        dracoMalfoy: {
+            name: 'Draco Malfoy',
+            age: 17,
+            house: 'Slytherin',
+            pet: {
+                name: 'Astronomy',
+                type: 'Snake',
+                color: 'Green'
+            }
+        }
+    }
+    for (let key in harryPotterCharacters) {
+        const home = harryPotterCharacters[key].name + " " + harryPotterCharacters[key].house
+        const home1 = harryPotterCharacters[key].name + " " + harryPotterCharacters[key].age
+    }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }

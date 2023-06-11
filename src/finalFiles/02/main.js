@@ -274,8 +274,8 @@ const newUserDP = {
 
 // console.log(name,age, address, preferences)
 
-const {name, age, ...restProps} = newUserDP
-console.log(restProps)
+// const {name, age, ...restProps} = newUserDP
+// console.log(restProps)
 /*
 const latitude1 = newUserDP.address.coordinates.latitude
 const longitude1 = newUserDP.address.coordinates.longitude*/

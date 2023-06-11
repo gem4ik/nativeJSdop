@@ -106,82 +106,76 @@ const saruman = {
 /*
 1. Напишите функцию, которая принимает массив персонажей и выводит список имен персонажей.
  */
-// const showCharacterName = characters => {
-//     return characters.map(el=> el.name)
-//
-// };
+const showCharacterName = characters => {
+};
 // console.log(showCharacterName(characters))
 
 /*
 2. Напишите функцию, которая принимает массив персонажей и выводит их всех в консоль.
 Если возраст персонажа равен "Unknown", то вместо него выведите строку "Возраст неизвестен".
  */
-// const checkCharacterAge = characters => {
-//     return characters.map(el=>el.age === "Unknown" ? {...el, age:"Возраст неизвестен"}: el)
-// };
+const checkCharacterAge = characters => {
+};
 // console.log(checkCharacterAge(characters))
 
 /*
 3.  Напишите функцию, которая будет добавлять нового персонажа в конец массива "characters" и возвращать обновленный массив.
 Добавить нужно объект saruman
  */
-// const addCharacter = characters => {
-//     return {...characters, ...saruman}
-// };
+const addCharacter = characters => {
+};
 // console.log(addCharacter(characters))
 
 /*
 4. Напишите функцию, которая принимает массив персонажей и выводит в консоль имена персонажей, у которых нет друзей.
  */
-// const checkCharacterFriends = characters => {
-//     return characters.filter(el=>el.friends.length !== 0).map(el=>el.name)
-// };
+const checkCharacterFriends = characters => {
+};
 // console.log(checkCharacterFriends(characters))
 
 /*
 5. Напишите функцию, которая принимает массив персонажей и выводит в консоль имена всех персонажей, которые не являются хоббитами.
  */
-// const checkCharacterIsHobbit = characters => {
-//     return characters.filter(el=> el.race !== 'Hobbit').map(el=>el.name)
-// };
+const checkCharacterIsHobbit = characters => {
+};
 // console.log(checkCharacterIsHobbit(characters))
+
 /*
 6. Напишите функцию, которая принимает массив персонажей и выводит в консоль имена всех четных персонажей (id).
  */
-// const checkCharacterIdIsEven = characters => {
-//     return characters.filter(el=> el.id%2 === 0).map(el=>el.name)
-// };
+const checkCharacterIdIsEven = characters => {
+};
 // console.log(checkCharacterIdIsEven(characters));
+
 /*
 7. Напишите функцию, которая принимает массив персонажей и проверяет, является ли он магом (имеет ли он в оружии "Staff").
 Если да, выведите сообщение "Этот персонаж является магом". Если нет, выведите сообщение "Этот персонаж не является магом".
 */
-// const checkCharacterIsWizard = characters => {
-//     return characters.reduce((acc, el)=>{
-//         if (el.weapons.includes('Staff')) {
-//             acc.push(el.name + " Этот персонаж является магом")
-//         } else acc.push(el.name + " Этот персонаж не является магом")
-//         return acc
-//     }, [])
-// };
+const checkCharacterIsWizard = characters => {
+
+};
 // console.log(checkCharacterIsWizard(characters))
+
 /*
 !*8!. Напишите функцию, которая принимает массив персонажей и меняет возраст персонажа "Sauron" на 100200 лет.
 */
-// const changeSauronAge = characters => {
-//     return characters.map(el=>el.name === "Sauron" ? {...el, age: 100200}: el)
-// };
+const changeSauronAge = characters => {
+};
 // console.log(changeSauronAge(characters))
+
 /*
 !**9!. Напишите функцию, которая принимает массив персонажей и находит персонажа с наибольшим количеством друзей.
 */
-// const checkMaxFriends = characters => {
-//     const arr = characters.sort((a,b)=> a.friends.length > b.friends.length ? 2 : -2)
-//     return arr[arr.length-1]
-// };
+const checkMaxFriends = characters => {
+};
 // console.log(checkMaxFriends(characters))
-//---------------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------
+
 // Задача: выбрать чётные, вычислить их квадраты и отобрать из них числа больше 50.
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 /*
 Последовательность решения
 Подготовка:
@@ -195,38 +189,36 @@ const saruman = {
 1ый способ решения
 Решить с помощью reduce?
  */
-// Решение через map/filter
-// const result = numbers
-//     .filter(checkNumIsEven)
-//     .map(transformNumToSquare)
-//     .map(checkNumIsGreaterThanAnotherNum)
 
-// const checkNumIsEven = (numbers) => {
-//     return numbers % 2 === 0
-// }
-// // console.log(checkNumIsEven(100))
-// const transformNumToSquare = (numbers) => {
-//     return Math.pow(numbers, 2)
-// }
-// // console.log(transformNumToSquare(4))
-// const checkNumIsGreaterThanAnotherNum = (numbers) => {
-//     return numbers > 50
-// }
-// // console.log(checkNumIsGreaterThanAnotherNum(51))
 //
-// // Решение с помощью reduce
-// const result = numbers.reduce((acc, value)=>{
-//     if(checkNumIsEven(value)) {
-//         const squared = transformNumToSquare(value)
-//         if (checkNumIsGreaterThanAnotherNum(squared)) {
-//             return [...acc, squared]
-//         }
-//     }
-//     return acc
-// }, [])
+// const checkNumIsEven = () => {
+//
+// }
+//
+// const transformNumToSquare = () => {
+//
+// }
+//
+// const checkNumIsGreaterThanAnotherNum = () => {
+//
+// }
+
+
+// Решение через map/filter
+// const result =
+//
+// console.log(result)
+// // [64, 100]
+
+
+// Решение с помощью reduce
+// const result =
 
 // console.log(result)
 // // [64, 100]
+
+
+
 
 // Задача: с помощью reduce создать ассоциативный массив
 
@@ -237,9 +229,4 @@ const saruman = {
 //     { id: "789", name: "Irina", age: 24 },
 // ]
 //
-// const assoc = users.reduce((acc, el)=>{
-//     acc[el.id] = {...el}
-//     return acc
-// }, {})
-// console.log(assoc)
-// //----------------------------------------------------------------------------------------------
+//
